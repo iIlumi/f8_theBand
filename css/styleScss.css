@@ -4,4 +4,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+#header {
+  height: 46px;
+  background-color: #000000;
+}
 /*# sourceMappingURL=styleScss.css.map */

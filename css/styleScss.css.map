@@ -1,9 +1,16 @@
 {
     "version": 3,
-    "mappings": "ACEA,AAAA,CAAC,CAAC;EACA,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACvB",
+    "mappings": "AGEA,AAAA,CAAC,CAAC;EACA,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACvB;;ACND,AAAA,OAAO,CAAC;EACN,MAAM,EAAE,IAAI;EAEZ,gBAAgB,EHFF,OAAO;CGGtB",
     "sources": [
         "../scss/styleScss.scss",
-        "../scss/_reset.scss"
+        "../scss/_variable.scss",
+        "../scss/_mixin.scss",
+        "../scss/_reset.scss",
+        "../scss/section/_header.scss",
+        "../scss/section/_slider.scss",
+        "../scss/section/_content.scss",
+        "../scss/section/_footer.scss",
+        "../scss/components/_button.scss"
     ],
     "names": [],
     "file": "styleScss.css"

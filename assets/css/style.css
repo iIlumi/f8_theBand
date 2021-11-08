@@ -1,7 +1,38 @@
 /* Reset css */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+1. Từ div cha ngoài vào div cha con bên trong - ngoài -> trong
+2. Từ trên xuống dưới Section trên làm trước,-> section bên dưới
+3. Từ tổng quan tới chi tiết
+*/
+
+/* 
+1. Vị trí 
+2. Kích thước 
+    -> width, height
+3. Màu sắc
+4. Kiểu dáng 
+    -> Chữ , hình dạng tròn vuông
+
+*/
+#main {
+}
+
+#header {
+  height: 46px;
+  background-color: black;
+}
+
+#slider {
+}
+
+#content {
+}
+
+#footer {
+}
