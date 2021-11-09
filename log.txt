@@ -5,3 +5,5 @@
 -- 40. Header fixed --
 41. slider
 42. Section About
+43. Team selection - about member
+44. Tour ticket

@@ -20,3 +20,17 @@
   opacity: 0.6;
   margin: $mg-2 0;
 }
+
+// Hướng solve tên class dài theo BEM
+.section__heading--white {
+  @extend .section__heading;
+  color: $color-white-1;
+}
+
+.section__heading-sub--white {
+    @extend .section__heading-sub;
+    color: $color-white-1;
+}
+
+// Có thể solve theo cách khác đặt class text-white và format riêng
+// Lợi code nhưng sẽ dễ gây hiểu nhầm tên class

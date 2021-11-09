@@ -22,7 +22,7 @@ ul li {
   padding: 64px 16px;
 }
 
-.section__heading {
+.section__heading, .section__heading--white {
   text-align: center;
   font-size: 30px;
   font-weight: 500;
@@ -30,12 +30,20 @@ ul li {
   margin: 10px 0;
 }
 
-.section__heading-sub {
+.section__heading-sub, .section__heading-sub--white {
   text-align: center;
   font-size: 15px;
   font-style: italic;
   opacity: 0.6;
   margin: 15px 0;
+}
+
+.section__heading--white {
+  color: #ffffff;
+}
+
+.section__heading-sub--white {
+  color: #ffffff;
 }
 
 #header {
@@ -146,5 +154,31 @@ ul li {
 .about__content {
   text-align: justify;
   margin: 10px 0;
+}
+
+.about__member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.about__member-name {
+  margin: 15px 0;
+}
+
+.about__member-img {
+  width: 60%;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.tour {
+  background-color: #000000;
+}
+
+.tour__tickets {
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=styleScss.css.map */

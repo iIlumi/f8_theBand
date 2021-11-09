@@ -2,3 +2,21 @@
   text-align: justify;
   margin: $mg-1 0;
 }
+
+.about__member {
+  display: flex;
+  padding: $pd-5 0;
+
+  text-align: center;
+}
+
+.about__member-name {
+  margin: $mg-2 0;
+}
+
+.about__member-img {
+  width: 60%;
+
+  border-radius: $bd-1;
+  margin-bottom: $mg-2 + 1;
+}
