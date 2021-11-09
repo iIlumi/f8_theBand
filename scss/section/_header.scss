@@ -5,8 +5,14 @@
 }
 
 #nav {
+  // Fix lại vấn đề css ảnh hưởng vào các con bằng selector >
+  // Thẻ a trong sub menu cũng có màu trắng theo
+  // Tuy nhiên vẫn phãi css riêng lại cho con đè lên
+  // -> Quản lí dễ nhưng code lại phức tạp selector hơn
+  // Cứ css rồi đè lại sau sẽ đơn giản hơn
   li {
     display: inline-block;
+    position: relative;
 
     // Nên để hover vào thẻ li thì khi các submenu hiện
     // Vẫn đang hover vào li cha
@@ -22,7 +28,7 @@
 
       text-decoration: none;
       color: $color-white-1;
-
+      text-transform: uppercase;
       // tận dụng tính chất line-height cho bằng đúng height của div cha bọc để canh center
       line-height: $lh-1;
 
@@ -31,6 +37,25 @@
   }
 
   .subnav {
-    display: none;
+    // display: none;
+    position: absolute;
+
+    background-color: $color-white-1;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
+      0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    // set lại để li chiếm trọn 100% do tính chất block
+    li {
+      display: block;
+
+      // Cho a chiếm trọn kích thước, khỏi css selector phức tạp
+      a {
+        width: 100%;
+        padding: 0 $pd-1;
+
+        text-transform: capitalize;
+      }
+    }
+
+    // độ ưu tiên của 1 class vẫn lớn hơn 2 tag li a nên đè được color trên
   }
 }

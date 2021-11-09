@@ -10,6 +10,10 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+ul li {
+  list-style-type: none;
+}
+
 #header {
   height: 46px;
   background-color: #000000;
@@ -17,6 +21,7 @@ body {
 
 #nav li {
   display: inline-block;
+  position: relative;
 }
 
 #nav li:hover a {
@@ -28,11 +33,25 @@ body {
   display: inline-block;
   text-decoration: none;
   color: #ffffff;
+  text-transform: uppercase;
   line-height: 46px;
   padding: 0 24px;
 }
 
 #nav .subnav {
-  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#nav .subnav li {
+  display: block;
+}
+
+#nav .subnav li a {
+  width: 100%;
+  padding: 0 12px;
+  text-transform: capitalize;
 }
 /*# sourceMappingURL=styleScss.css.map */
