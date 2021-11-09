@@ -21,6 +21,10 @@
       color: $color-black-1;
     }
 
+    &:hover .subnav {
+      display: block;
+    }
+
     a {
       // fix vấn đề hover vào li ko đổi màu toàn bộ được
       // Cho a chiếm toàn bộ div li
@@ -30,6 +34,9 @@
       color: $color-white-1;
       text-transform: uppercase;
       // tận dụng tính chất line-height cho bằng đúng height của div cha bọc để canh center
+      // Tuy nhiên về sau xử lý bằng line height canh center text rất dở
+      // Ảnh hưởng canh padding chiều dọc với layout
+      // TODO canh center ko dùng line-height
       line-height: $lh-1;
 
       padding: 0 $pd-2;
@@ -37,25 +44,36 @@
   }
 
   .subnav {
-    // display: none;
+    display: none;
     position: absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 160px;
 
     background-color: $color-white-1;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
       0 4px 20px 0 rgba(0, 0, 0, 0.19);
     // set lại để li chiếm trọn 100% do tính chất block
+
     li {
       display: block;
 
       // Cho a chiếm trọn kích thước, khỏi css selector phức tạp
       a {
         width: 100%;
-        padding: 0 $pd-1;
+        padding: 0 $pd-3;
 
         text-transform: capitalize;
+        background-color: $color-white-1;
+      }
+
+      &:hover a {
+        background-color: $color-grey-1;
       }
     }
 
     // độ ưu tiên của 1 class vẫn lớn hơn 2 tag li a nên đè được color trên
   }
 }
+
