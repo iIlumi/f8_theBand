@@ -2,14 +2,19 @@
   margin: 0 $pd-4;
   background-color: $color-white-1;
 
-  img {
-    width: 100%;
-    // Chuyển về block để ko sinh thêm khoảng trắng thừa với body
-    display: block;
+  .card-img {
+    background-color: $color-black-1;
+    // Có thể fix bằng cách tạo overlay hidden
+    // Nhưng ở đây thử cách khác
+    img {
+      width: 100%;
+      // Chuyển về block để ko sinh thêm khoảng trắng thừa với body
+      display: block;
 
-    &:hover {
-      // TODO check fix background color cho img hover
-      opacity: 0.6;
+      &:hover {
+        // TODO check fix background color cho img hover
+        opacity: 0.6;
+      }
     }
   }
 
@@ -48,3 +53,5 @@
     }
   }
 }
+
+// https://stackoverflow.com/questions/27829250/child-margin-doesnt-affect-parent-height

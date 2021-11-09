@@ -53,12 +53,16 @@ ul li {
   background-color: #ffffff;
 }
 
-.tour__card img {
+.tour__card .card-img {
+  background-color: #000000;
+}
+
+.tour__card .card-img img {
   width: 100%;
   display: block;
 }
 
-.tour__card img:hover {
+.tour__card .card-img img:hover {
   opacity: 0.6;
 }
 
