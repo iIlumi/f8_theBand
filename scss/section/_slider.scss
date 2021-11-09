@@ -1,0 +1,46 @@
+#slider {
+  // Chừa ra khoảng cách đúng bằng height của header fixed
+  margin-top: 46.4px;
+}
+
+// pp background img
+#slider {
+  // 50% width của chính nó ?
+  // shorthand background
+  //   Dùng padding để set ration cứng cho ảnh
+  position: relative;
+  padding-top: 50%;
+  background: url("/img/chicago.jpg") top center / cover no-repeat;
+}
+
+// Các phần padding của slider content có thể cộng dồn tính tổng với nhau
+// Set về margin hoặc padding tổng là được
+// Tuy nhiên canh inspect theo đúng layout mẫu luôn
+
+.slider__content {
+  position: absolute;
+  bottom: 0;
+
+  // Canh center
+  // or left-right 0
+  // or transform translate X -50%
+  // or d-flex
+  // Cách này code tiện kết hợp canh giữa text luôn
+  width: 100%;
+  text-align: center;
+
+  color: $color-white-1;
+
+  padding: $pd-5 $pd-3;
+
+  h2 {
+    font-weight: $fw-1;
+    font-size: $fs-2;
+    margin: $mg-1 0;
+  }
+
+  p {
+    font-weight: $fw-2;
+    margin: $mg-2 0;
+  }
+}

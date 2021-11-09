@@ -1,7 +1,19 @@
+// TODO header so với layout mẫu bị lố 1 khoảng white-space nhỏ
+// Inspect trong firefox sẽ thấy
+// Lí do giữa các inline-block có 1 khoảng cách như các chữ với nhau
+// Solve bằng việc set hẳng về d-flex luôn
+// https://css-tricks.com/fighting-the-space-between-inline-block-elements/
+
 #header {
+  // TODO có cần display flex mới dùng margin left auto được ?
   // height: 46px;
   display: flex;
   background-color: $color-black-1;
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 }
 
 #nav {
@@ -85,6 +97,9 @@
   margin-left: auto;
 
   color: $color-white-1;
-  background-color: $color-red-1;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-red-1;
+  }
 }
