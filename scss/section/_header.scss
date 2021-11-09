@@ -1,6 +1,6 @@
 #header {
   // height: 46px;
-
+  display: flex;
   background-color: $color-black-1;
 }
 
@@ -10,6 +10,8 @@
   // Tuy nhiên vẫn phãi css riêng lại cho con đè lên
   // -> Quản lí dễ nhưng code lại phức tạp selector hơn
   // Cứ css rồi đè lại sau sẽ đơn giản hơn
+  display: inline-block;
+
   li {
     display: inline-block;
     position: relative;
@@ -75,4 +77,14 @@
 
     // độ ưu tiên của 1 class vẫn lớn hơn 2 tag li a nên đè được color trên
   }
+}
+.header__search {
+  display: inline-block;
+
+  padding: $pd-1 $pd-2;
+  margin-left: auto;
+
+  color: $color-white-1;
+  background-color: $color-red-1;
+  cursor: pointer;
 }
