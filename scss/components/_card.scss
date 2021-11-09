@@ -1,0 +1,50 @@
+.tour__card {
+  margin: 0 $pd-4;
+  background-color: $color-white-1;
+
+  img {
+    width: 100%;
+    // Chuyển về block để ko sinh thêm khoảng trắng thừa với body
+    display: block;
+
+    &:hover {
+      // TODO check fix background color cho img hover
+      opacity: 0.6;
+    }
+  }
+
+  .card-body {
+    padding: 0 $pd-3 $pd-3;
+  }
+
+  .card-title {
+    font-size: $fs-1;
+    margin: $mg-2 0;
+    font-weight: bolder;
+  }
+
+  .card-date {
+    margin: $mg-2 0;
+    opacity: 0.6;
+  }
+
+  .card-text {
+    margin: $mg-2 0;
+  }
+
+  .card-buy-btn {
+    padding: $pd-4 $pd-3;
+    display: inline-block;
+    // margin-bottom: $mg-2 + 1;
+
+    background-color: $color-black-1;
+    color: $color-white-1;
+
+    text-decoration: none;
+
+    &:hover {
+      background-color: $color-grey-1;
+      color: $color-black-1;
+    }
+  }
+}

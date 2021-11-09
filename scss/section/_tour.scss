@@ -49,3 +49,17 @@
     color: $color-white-1;
   }
 }
+
+// Sử dụng kỹ thuật margin âm
+// đẩy ngược lại vị trí đầu và cuối
+// Kỹ thuật được cả BS dùng
+// Nhân với -1
+// Ở đây phải dùng giá trị của pd vô cho margin
+// https://www.geeksforgeeks.org/sass-negative-variable-value/
+.tour__list {
+  display: flex;
+  // margin: $pd-5 (-$pd-4) 0;
+  // padding-bottom: $pd-7;
+  // NOTE TH này có thể gom chung được ?
+  margin: $pd-5 (-$pd-4) $pd-7;
+}

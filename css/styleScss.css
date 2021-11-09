@@ -11,6 +11,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 15px;
   line-height: 1.5;
+  color: #000000;
 }
 
 ul li {
@@ -45,6 +46,52 @@ ul li {
 
 .section__heading-sub--white {
   color: #ffffff;
+}
+
+.tour__card {
+  margin: 0 8px;
+  background-color: #ffffff;
+}
+
+.tour__card img {
+  width: 100%;
+  display: block;
+}
+
+.tour__card img:hover {
+  opacity: 0.6;
+}
+
+.tour__card .card-body {
+  padding: 0 16px 16px;
+}
+
+.tour__card .card-title {
+  font-size: 15px;
+  margin: 15px 0;
+  font-weight: bolder;
+}
+
+.tour__card .card-date {
+  margin: 15px 0;
+  opacity: 0.6;
+}
+
+.tour__card .card-text {
+  margin: 15px 0;
+}
+
+.tour__card .card-buy-btn {
+  padding: 8px 16px;
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.tour__card .card-buy-btn:hover {
+  background-color: #cccccc;
+  color: #000000;
 }
 
 #header {
@@ -212,6 +259,13 @@ ul li {
   margin: 0 16px 0 auto;
   background-color: #000000;
   color: #ffffff;
+}
+
+.tour__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 32px -8px 48px;
 }
 
 /* 

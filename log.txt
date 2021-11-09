@@ -7,3 +7,4 @@
 42. Section About
 43. Team selection - about member
 44. Tour ticket
+45. Tour places
