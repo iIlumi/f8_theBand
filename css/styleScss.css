@@ -5,8 +5,34 @@
           box-sizing: border-box;
 }
 
+html,
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 #header {
   height: 46px;
   background-color: #000000;
+}
+
+#nav li {
+  display: inline-block;
+}
+
+#nav li:hover a {
+  background-color: #cccccc;
+  color: #000000;
+}
+
+#nav li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 46px;
+  padding: 0 24px;
+}
+
+#nav .subnav {
+  display: none;
 }
 /*# sourceMappingURL=styleScss.css.map */

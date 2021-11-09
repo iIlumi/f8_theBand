@@ -3,3 +3,34 @@
 
   background-color: $color-black-1;
 }
+
+#nav {
+  li {
+    display: inline-block;
+
+    // Nên để hover vào thẻ li thì khi các submenu hiện
+    // Vẫn đang hover vào li cha
+    &:hover a {
+      background-color: $color-grey-1;
+      color: $color-black-1;
+    }
+
+    a {
+      // fix vấn đề hover vào li ko đổi màu toàn bộ được
+      // Cho a chiếm toàn bộ div li
+      display: inline-block;
+
+      text-decoration: none;
+      color: $color-white-1;
+
+      // tận dụng tính chất line-height cho bằng đúng height của div cha bọc để canh center
+      line-height: $lh-1;
+
+      padding: 0 $pd-2;
+    }
+  }
+
+  .subnav {
+    display: none;
+  }
+}
