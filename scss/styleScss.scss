@@ -2,10 +2,13 @@
 @import "./mixin";
 
 @import "./reset";
+@import "./extend";
 
 @import "./section/header";
 @import "./section/slider";
 @import "./section/content";
 @import "./section/footer";
+@import "./section/about";
+
 
 @import "./components/button";

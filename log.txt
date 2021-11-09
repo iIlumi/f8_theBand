@@ -4,3 +4,4 @@
 39. Header search
 -- 40. Header fixed --
 41. slider
+42. Section About

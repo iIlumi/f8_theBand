@@ -1,0 +1,22 @@
+.section__content {
+  // Set max-width sẽ tự responsive thành container-fluid khi màn nhỏ
+  max-width: 800px;
+  margin: 0 auto;
+  padding: $pd-6 $pd-3;
+}
+
+.section__heading {
+  text-align: center;
+  font-size: $fs-3;
+  font-weight: $fw-1;
+  letter-spacing: $ls-1;
+  margin: $mg-1 0;
+}
+
+.section__heading-sub {
+  text-align: center;
+  font-size: $fs-1;
+  font-style: italic;
+  opacity: 0.6;
+  margin: $mg-2 0;
+}

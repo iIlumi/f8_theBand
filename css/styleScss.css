@@ -16,6 +16,28 @@ ul li {
   list-style-type: none;
 }
 
+.section__content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 64px 16px;
+}
+
+.section__heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  margin: 10px 0;
+}
+
+.section__heading-sub {
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+  opacity: 0.6;
+  margin: 15px 0;
+}
+
 #header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,5 +141,10 @@ ul li {
 .slider__content p {
   font-weight: 700;
   margin: 15px 0;
+}
+
+.about__content {
+  text-align: justify;
+  margin: 10px 0;
 }
 /*# sourceMappingURL=styleScss.css.map */
