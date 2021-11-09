@@ -8,3 +8,5 @@
 43. Team selection - about member
 44. Tour ticket
 45. Tour places
+    -> kỹ thuật margin âm cho card
+47. Buy Ticket Modal

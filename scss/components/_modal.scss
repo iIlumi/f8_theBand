@@ -1,0 +1,65 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  @extend %center-div-flex;
+}
+
+.modal__container {
+  width: 900px;
+  min-height: 200px;
+
+  background-color: $color-white-1;
+}
+
+.modal__close {
+  /*scss_Placeholder */
+}
+
+.modal__header {
+  background-color: $color-teal-1;
+  color: $color-white-1;
+
+  display: flex;
+  @extend %center-div-flex;
+  //   Tạm thời khoan check các thông số padding
+  height: 130px;
+
+  font-size: $fs-4;
+
+  i {
+    margin-right: 16px;
+  }
+}
+
+.modal__body {
+  /*scss_Placeholder */
+}
+
+.modal__label {
+  /*scss_Placeholder */
+}
+
+.modal__input {
+  /*scss_Placeholder */
+}
+
+.modal__footer {
+  /*scss_Placeholder */
+}
+
+.modal__pay {
+  /*scss_Placeholder */
+}
+
+.modal__footer-close {
+  /*scss_Placeholder */
+}
+
+.modal__help {
+  /*scss_Placeholder */
+}

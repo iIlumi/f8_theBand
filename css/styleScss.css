@@ -48,6 +48,15 @@ ul li {
   color: #ffffff;
 }
 
+.modal, .modal__header {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .tour__card {
   margin: 0 8px;
   background-color: #ffffff;
@@ -96,6 +105,69 @@ ul li {
 .tour__card .card-buy-btn:hover {
   background-color: #cccccc;
   color: #000000;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal__container {
+  width: 900px;
+  min-height: 200px;
+  background-color: #ffffff;
+}
+
+.modal__close {
+  /*scss_Placeholder */
+}
+
+.modal__header {
+  background-color: #009688;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 130px;
+  font-size: 32px;
+}
+
+.modal__header i {
+  margin-right: 16px;
+}
+
+.modal__body {
+  /*scss_Placeholder */
+}
+
+.modal__label {
+  /*scss_Placeholder */
+}
+
+.modal__input {
+  /*scss_Placeholder */
+}
+
+.modal__footer {
+  /*scss_Placeholder */
+}
+
+.modal__pay {
+  /*scss_Placeholder */
+}
+
+.modal__footer-close {
+  /*scss_Placeholder */
+}
+
+.modal__help {
+  /*scss_Placeholder */
 }
 
 #header {

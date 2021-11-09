@@ -28,9 +28,14 @@
 }
 
 .section__heading-sub--white {
-    @extend .section__heading-sub;
-    color: $color-white-1;
+  @extend .section__heading-sub;
+  color: $color-white-1;
 }
 
 // Có thể solve theo cách khác đặt class text-white và format riêng
 // Lợi code nhưng sẽ dễ gây hiểu nhầm tên class
+
+%center-div-flex {
+  justify-content: center;
+  align-items: center;
+}

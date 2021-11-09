@@ -146,7 +146,9 @@
 
           <div class="tour__list">
             <div class="tour__card">
-              <div class="card-img"><img src="./img/newyork.jpg" alt="newyork" /></div>
+              <div class="card-img">
+                <img src="./img/newyork.jpg" alt="newyork" />
+              </div>
               <div class="card-body">
                 <h5 class="card-title">New York</h5>
                 <div class="card-date">Fri 27 Nov 2016</div>
@@ -157,7 +159,9 @@
               </div>
             </div>
             <div class="tour__card">
-              <div class="card-img"><img src="./img/paris.jpg" alt="paris" /></div>
+              <div class="card-img">
+                <img src="./img/paris.jpg" alt="paris" />
+              </div>
               <div class="card-body">
                 <h5 class="card-title">Paris</h5>
                 <div class="card-date">Fri 27 Nov 2016</div>
@@ -168,7 +172,9 @@
               </div>
             </div>
             <div class="tour__card">
-              <div class="card-img"><img src="./img/sanfran.jpg" alt="sanfran" /></div>
+              <div class="card-img">
+                <img src="./img/sanfran.jpg" alt="sanfran" />
+              </div>
               <!-- https://stackoverflow.com/questions/27829250/child-margin-doesnt-affect-parent-height -->
               <div class="card-body">
                 <h5 class="card-title">San Francisco</h5>
@@ -184,6 +190,34 @@
       </div>
 
       <div id="footer"></div>
+    </div>
+
+    <div class="modal">
+      <div class="modal__container">
+        <div class="modal__close">x</div>
+        <div class="modal__header">
+          <div><i class="fa fa-suitcase"></i>Tickets</div>
+        </div>
+        <div class="modal__body">
+          <label for="" class="modal__label">
+            <i class="fa fa-shopping-cart"></i>
+            Tickets, $15 per person
+          </label>
+          <input type="text" class="modal__input" placeholder="How many?" />
+          <label for="" class="modal__label">
+            <i class="fa fa-user"></i>
+            Send To
+          </label>
+          <input type="text" class="modal__input" placeholder="Enter email" />
+          <button id="modal__pay">Pay <i class="fa fa-check"></i></button>
+        </div>
+        <div class="modal__footer">
+          <button class="modal__footer-close">
+            Close <i class="fa fa-remove"></i>
+          </button>
+          <p class="modal__help">Need <a href="#">help?</a></p>
+        </div>
+      </div>
     </div>
 
     <script>
