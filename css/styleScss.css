@@ -9,6 +9,7 @@ html,
 body {
   font-family: "Lato", sans-serif;
   font-size: 15px;
+  line-height: 1.5;
 }
 
 ul li {
@@ -16,13 +17,20 @@ ul li {
 }
 
 #header {
-  height: 46px;
   background-color: #000000;
 }
 
 #nav li {
   display: inline-block;
   position: relative;
+}
+
+#nav li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 12px 24px;
 }
 
 #nav li:hover a {
@@ -32,15 +40,6 @@ ul li {
 
 #nav li:hover .subnav {
   display: block;
-}
-
-#nav li a {
-  display: inline-block;
-  text-decoration: none;
-  color: #ffffff;
-  text-transform: uppercase;
-  line-height: 46px;
-  padding: 0 24px;
 }
 
 #nav .subnav {
@@ -60,7 +59,7 @@ ul li {
 
 #nav .subnav li a {
   width: 100%;
-  padding: 0 16px;
+  padding: 8px 16px;
   text-transform: capitalize;
   background-color: #ffffff;
 }

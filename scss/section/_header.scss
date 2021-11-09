@@ -1,5 +1,5 @@
 #header {
-  height: 46px;
+  // height: 46px;
 
   background-color: $color-black-1;
 }
@@ -16,15 +16,6 @@
 
     // Nên để hover vào thẻ li thì khi các submenu hiện
     // Vẫn đang hover vào li cha
-    &:hover a {
-      background-color: $color-grey-1;
-      color: $color-black-1;
-    }
-
-    &:hover .subnav {
-      display: block;
-    }
-
     a {
       // fix vấn đề hover vào li ko đổi màu toàn bộ được
       // Cho a chiếm toàn bộ div li
@@ -37,9 +28,18 @@
       // Tuy nhiên về sau xử lý bằng line height canh center text rất dở
       // Ảnh hưởng canh padding chiều dọc với layout
       // TODO canh center ko dùng line-height
-      line-height: $lh-1;
+      // line-height: $lh-1;
 
-      padding: 0 $pd-2;
+      padding: $pd-1 $pd-2;
+    }
+
+    &:hover a {
+      background-color: $color-grey-1;
+      color: $color-black-1;
+    }
+
+    &:hover .subnav {
+      display: block;
     }
   }
 
@@ -62,7 +62,7 @@
       // Cho a chiếm trọn kích thước, khỏi css selector phức tạp
       a {
         width: 100%;
-        padding: 0 $pd-3;
+        padding: $pd-4 $pd-3;
 
         text-transform: capitalize;
         background-color: $color-white-1;
@@ -76,4 +76,3 @@
     // độ ưu tiên của 1 class vẫn lớn hơn 2 tag li a nên đè được color trên
   }
 }
-
