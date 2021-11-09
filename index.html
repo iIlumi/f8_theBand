@@ -129,24 +129,31 @@
           <p class="section__heading-sub--white">
             Remember to book your tickets!
           </p>
-          <div class="tour__tickets">
+          <ul class="tour__tickets">
             <li>
               September
-              <span class="tickets__sold-out">Sold out</span>
+              <span class="sold-out">Sold out</span>
             </li>
             <li>
               October
-              <span class="tickets__sold-out">Sold out</span>
+              <span class="sold-out">Sold out</span>
             </li>
             <li>
               November
-              <span class="tickets__quatity">3</span>
+              <span class="quantity">3</span>
             </li>
-          </div>
+          </ul>
         </div>
       </div>
 
       <div id="footer"></div>
     </div>
+
+    <script>
+      // Temp stop w3
+      Array.from(document.getElementsByClassName("mySlides")).forEach((ele) => {
+        ele.classList.toggle("mySlides");
+      });
+    </script>
   </body>
 </html>

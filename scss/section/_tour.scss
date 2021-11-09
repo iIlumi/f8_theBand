@@ -3,5 +3,49 @@
 }
 
 .tour__tickets {
+  margin-top: $mg-3;
+
   background-color: $color-white-1;
+  // Border khá nhỏ - lệch kích thước check mới thấy
+  border: 1px solid $color-grey-3;
+
+  li {
+    // Phải set d-flex để align .quantity
+    display: flex;
+    padding: $pd-4 $pd-3;
+    color: $color-grey-2;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-grey-3;
+    }
+  }
+
+  .sold-out {
+    display: inline-block;
+    // display ko cần lắm nhưng sẽ fix kích thước đúng px theo mẫu
+    // Ngoài ra có thêm txt-center nhưng ko thấy lệch
+
+    margin-left: $mg-2 + 1;
+    padding: 0 $pd-4;
+
+    background-color: $color-red-1;
+    color: $color-white-1;
+  }
+
+  // https://blog.shahednasser.com/stop-using-float-in-css-here-are-your-alternatives/
+  .quantity {
+    display: inline-block;
+    padding: 0 $pd-4;
+    // Nếu ko set padding-y thì sẽ ra ellips, với số vé lớn nhìn sẽ xấu
+    // Solve bằng line-height + height + margin - 3px (giá trị âm)
+    // Tuy nhiên ở đây sẽ clone layout mẫu luôn
+    border-radius: 50%;
+
+    // margin-right: 16;
+    // margin: 0 $mg-2 + 1 0 auto;
+    margin: 0 $mg-4 0 auto;
+
+    background-color: $color-black-1;
+    color: $color-white-1;
+  }
 }

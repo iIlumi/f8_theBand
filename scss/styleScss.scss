@@ -13,3 +13,34 @@
 
 
 @import "./components/button";
+
+
+/* 
+1. Từ div cha ngoài vào div cha con bên trong - ngoài -> trong
+2. Từ trên xuống dưới Section trên làm trước,-> section bên dưới
+3. Từ tổng quan tới chi tiết
+*/
+
+/* 
+1. Vị trí 
+2. Kích thước 
+    -> width, height
+3. Màu sắc
+4. Kiểu dáng 
+    -> Chữ , hình dạng tròn vuông
+
+*/
+
+// My rec
+/* 
+3. Màu sắc - bgc / clo
+2. Kích thước - content - border 
+1. Vị trí 
+    -> width, height, z-index, abs / rel
+
+4. Kiểu dáng (khá chung chung -> the rest)
+    -> Chữ style, hình dạng tròn vuông radius, box-shadow
+
+5. tương tác
+    animation / hover / focus / transition
+*/

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -179,6 +180,64 @@ ul li {
 }
 
 .tour__tickets {
+  margin-top: 40px;
   background-color: #ffffff;
+  border: 1px solid #dddddd;
 }
+
+.tour__tickets li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 16px;
+  color: #757575;
+}
+
+.tour__tickets li:not(:last-child) {
+  border-bottom: 1px solid #dddddd;
+}
+
+.tour__tickets .sold-out {
+  display: inline-block;
+  margin-left: 16px;
+  padding: 0 8px;
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.tour__tickets .quantity {
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 50%;
+  margin: 0 16px 0 auto;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* 
+1. Từ div cha ngoài vào div cha con bên trong - ngoài -> trong
+2. Từ trên xuống dưới Section trên làm trước,-> section bên dưới
+3. Từ tổng quan tới chi tiết
+*/
+/* 
+1. Vị trí 
+2. Kích thước 
+    -> width, height
+3. Màu sắc
+4. Kiểu dáng 
+    -> Chữ , hình dạng tròn vuông
+
+*/
+/* 
+3. Màu sắc - bgc / clo
+2. Kích thước - content - border 
+1. Vị trí 
+    -> width, height, z-index, abs / rel
+
+4. Kiểu dáng (khá chung chung -> the rest)
+    -> Chữ style, hình dạng tròn vuông radius, box-shadow
+
+5. tương tác
+    animation / hover / focus / transition
+*/
 /*# sourceMappingURL=styleScss.css.map */
