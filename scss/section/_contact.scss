@@ -1,0 +1,34 @@
+.contact__content {
+  padding: $pd-5 0;
+
+  input.btn {
+    // Vì div này đang demo float nên ok
+    float: right;
+    margin: $mg-4 0;
+  }
+}
+
+.contact__info {
+  font-size: $fs-1 + 3;
+
+  //   Tuy nhiên ko nên select vậy
+  // -> lỡ đổi thư viện -> khác class
+  //   i[class*="fa-"]
+  i {
+    //   Dùng width đẩy tránh TH có icon ko dài bằng nhau
+    width: 30px;
+  }
+}
+
+.contact__form {
+  .row:not(:last-of-type) {
+    margin-bottom: $pd-4;
+  }
+  .form-control {
+    border: 1px solid $color-grey-1;
+    padding: $pd-4;
+    width: 100%;
+  }
+}
+
+// TODO fix nhẹ khoảng cách giữa 2 col

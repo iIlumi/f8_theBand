@@ -12,3 +12,4 @@
 47. Buy Ticket Modal
 48. Buy Ticket Modal javascript logic
 49. Row - column layout
+50. Contact-form

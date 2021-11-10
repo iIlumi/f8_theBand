@@ -8,7 +8,8 @@
 
 html,
 body,
-button {
+button,
+input {
   font-family: "Lato", sans-serif;
   font-size: 15px;
   line-height: 1.5;
@@ -17,10 +18,6 @@ button {
 
 ul li {
   list-style-type: none;
-}
-
-button {
-  border: none;
 }
 
 .section__content {
@@ -77,6 +74,7 @@ button {
   float: left;
   padding-left: 8px;
   padding-right: 8px;
+  width: 100%;
 }
 
 .col-third {
@@ -154,15 +152,16 @@ button {
   margin: 15px 0;
 }
 
-.tour__card .card-buy-btn {
+.btn {
   padding: 8px 16px;
   display: inline-block;
   background-color: #000000;
   color: #ffffff;
   text-decoration: none;
+  border: none;
 }
 
-.tour__card .card-buy-btn:hover {
+.btn:hover {
   background-color: #cccccc;
   color: #000000;
 }
@@ -455,6 +454,47 @@ button {
   display: -ms-flexbox;
   display: flex;
   margin: 32px -8px 48px;
+}
+
+.contact__content {
+  padding: 32px 0;
+}
+
+.contact__content input.btn {
+  float: right;
+  margin: 16px 0;
+}
+
+.contact__info {
+  font-size: 18px;
+}
+
+.contact__info i {
+  width: 30px;
+}
+
+.contact__form .row:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+.contact__form .form-control {
+  border: 1px solid #cccccc;
+  padding: 8px;
+  width: 100%;
+}
+
+.btn {
+  padding: 8px 16px;
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #cccccc;
+  color: #000000;
 }
 
 /* 

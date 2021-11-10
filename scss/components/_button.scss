@@ -1,0 +1,16 @@
+.btn {
+  padding: $pd-4 $pd-3;
+  display: inline-block;
+  // margin-bottom: $mg-2 + 1;
+
+  background-color: $color-black-1;
+  color: $color-white-1;
+
+  text-decoration: none;
+  border: none;
+
+  &:hover {
+    background-color: $color-grey-1;
+    color: $color-black-1;
+  }
+}
