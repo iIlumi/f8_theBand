@@ -1,0 +1,39 @@
+// build dựa trên  float
+// style cũa BS3 -> css cũ, ko grid / flex
+// commit done tour list card with bug img hover opacity
+// Commit hash bfbf72c9a028badff8d013259dc46581b99b57fb
+
+// việc đẩy margin âm vì các item con lại có thêm padding dương
+// -> Bù trừ lẫn nhau và nằm trọn trong container
+// -> check lại commit cũ
+
+.row {
+  margin-left: (-$pd-4);
+  margin-right: (-$pd-4);
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.col {
+  float: left;
+  padding-left: $pd-4;
+  padding-right: $pd-4;
+}
+
+.col-third {
+  @extend .col;
+  width: 33.33333%;
+}
+
+.col-half {
+  @extend .col;
+  width: 50%;
+}
+
+.text-center {
+  text-align: center !important;
+}
