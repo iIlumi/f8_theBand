@@ -3,3 +3,8 @@
   font-size: $fs;
   font-weight: $fw;
 }
+
+@mixin color-X2($color, $bgc) {
+  color: $color;
+  background-color: $bgc;
+}

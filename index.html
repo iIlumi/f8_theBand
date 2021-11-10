@@ -199,21 +199,31 @@
           <div><i class="fa fa-suitcase"></i>Tickets</div>
         </div>
         <div class="modal__body">
-          <label for="" class="modal__label">
+          <label for="ticket__quantity" class="modal__label">
             <i class="fa fa-shopping-cart"></i>
             Tickets, $15 per person
           </label>
-          <input type="text" class="modal__input" placeholder="How many?" />
-          <label for="" class="modal__label">
+          <input
+            id="ticket__quantity"
+            type="text"
+            class="modal__input"
+            placeholder="How many?"
+          />
+          <label for="ticket__email" class="modal__label">
             <i class="fa fa-user"></i>
             Send To
           </label>
-          <input type="text" class="modal__input" placeholder="Enter email" />
-          <button id="modal__pay">Pay <i class="fa fa-check"></i></button>
+          <input
+            id="ticket__email"
+            type="text"
+            class="modal__input"
+            placeholder="Enter email"
+          />
+          <button id="modal__btn-pay">Pay <i class="fa fa-check"></i></button>
         </div>
         <div class="modal__footer">
-          <button class="modal__footer-close">
-            Close <i class="fa fa-remove"></i>
+          <button class="modal__btn-close">
+            Close <i class="fa fa-times"></i>
           </button>
           <p class="modal__help">Need <a href="#">help?</a></p>
         </div>

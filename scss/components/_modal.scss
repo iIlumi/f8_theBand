@@ -14,10 +14,26 @@
   min-height: 200px;
 
   background-color: $color-white-1;
+
+  position: relative;
 }
 
 .modal__close {
   /*scss_Placeholder */
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  color: $color-white-1;
+  cursor: pointer;
+  font-size: $fs-2;
+
+  padding: $pd-4 $pd-3;
+
+  &:hover {
+    color: $color-black-1;
+    background-color: $color-white-1;
+  }
 }
 
 .modal__header {
@@ -32,34 +48,61 @@
   font-size: $fs-4;
 
   i {
-    margin-right: 16px;
+    margin-right: $pd-3;
   }
 }
 
 .modal__body {
-  /*scss_Placeholder */
+  padding: 0 $pd-3;
 }
 
 .modal__label {
-  /*scss_Placeholder */
+  display: block;
+  margin: $mg-2 0;
 }
 
 .modal__input {
-  /*scss_Placeholder */
+  display: block;
+  padding: $pd-4;
+  width: 100%;
+
+  border: 1px solid $color-grey-1;
 }
 
 .modal__footer {
-  /*scss_Placeholder */
+  padding: 0 $pd-3;
+  display: flex;
 }
 
-.modal__pay {
-  /*scss_Placeholder */
+#modal__btn-pay {
+  display: block;
+  @include color-X2($color-white-1, $color-teal-1);
+  width: 100%;
+  padding: $pd-3;
+
+  border: none;
+  margin: $mg-4 0;
+
+  &:hover {
+    @include color-X2($color-black-1, $color-grey-1);
+  }
 }
 
-.modal__footer-close {
-  /*scss_Placeholder */
+.modal__btn-close {
+  @include color-X2($color-white-1, $color-red-1);
+  border: none;
+  padding: $pd-4 $pd-3;
+  margin: $mg-4 0;
+
+  &:hover {
+    @include color-X2($color-black-1, $color-grey-1);
+  }
 }
 
 .modal__help {
-  /*scss_Placeholder */
+  display: inline-block;
+  margin: $mg-2 0 $mg-2 auto;
+  a {
+    color: $color-blue-1;
+  }
 }
