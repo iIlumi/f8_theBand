@@ -7,7 +7,8 @@
 }
 
 html,
-body {
+body,
+button {
   font-family: "Lato", sans-serif;
   font-size: $fs-1;
   line-height: $lh-0;
@@ -17,3 +18,11 @@ body {
 ul li {
   list-style-type: none;
 }
+
+button {
+  border: none;
+}
+
+// Chuyển thẻ a thành button bị mất css
+// Thẻ a click vào bị nhảy link lên đầu trang dù để #
+// Fix qua button

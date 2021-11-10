@@ -5,17 +5,27 @@
   left: 0;
   right: 0;
 
-  display: flex;
+  display: none;
   @extend %center-div-flex;
+
+  background-color: $color-black-2;
+
+  &.open {
+    display: flex;
+  }
 }
 
 .modal__container {
   width: 900px;
+  //   Responsive luôn chừa 2 padding 16px * 2 =32px 2 bên
+  max-width: calc(100% - 32px);
   min-height: 200px;
 
   background-color: $color-white-1;
 
   position: relative;
+
+  animation: modalFadeIn ease 0.3s;
 }
 
 .modal__close {

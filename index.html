@@ -155,7 +155,7 @@
                 <div class="card-text">
                   Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                 </div>
-                <a href="#" class="card-buy-btn">Buy Tickets</a>
+                <button href="#" class="card-buy-btn">Buy Tickets</button>
               </div>
             </div>
             <div class="tour__card">
@@ -168,7 +168,7 @@
                 <div class="card-text">
                   Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                 </div>
-                <a href="#" class="card-buy-btn">Buy Tickets</a>
+                <button href="#" class="card-buy-btn">Buy Tickets</button>
               </div>
             </div>
             <div class="tour__card">
@@ -182,7 +182,7 @@
                 <div class="card-text">
                   Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                 </div>
-                <a href="#" class="card-buy-btn">Buy Tickets</a>
+                <button href="#" class="card-buy-btn">Buy Tickets</button>
               </div>
             </div>
           </div>
@@ -194,7 +194,7 @@
 
     <div class="modal">
       <div class="modal__container">
-        <div class="modal__close">x</div>
+        <div class="modal__close js-close">x</div>
         <div class="modal__header">
           <div><i class="fa fa-suitcase"></i>Tickets</div>
         </div>
@@ -222,7 +222,7 @@
           <button id="modal__btn-pay">Pay <i class="fa fa-check"></i></button>
         </div>
         <div class="modal__footer">
-          <button class="modal__btn-close">
+          <button class="modal__btn-close js-close">
             Close <i class="fa fa-times"></i>
           </button>
           <p class="modal__help">Need <a href="#">help?</a></p>
@@ -235,6 +235,23 @@
       Array.from(document.getElementsByClassName("mySlides")).forEach((ele) => {
         ele.classList.toggle("mySlides");
       });
+    </script>
+    <script>
+      // https://flaviocopes.com/how-to-add-event-listener-multiple-elements-javascript/
+      let modal = document.querySelector(".modal");
+
+      document
+        .querySelectorAll(".card-buy-btn")
+        .forEach((btn) =>
+          btn.addEventListener("click", (event) => modal.classList.add("open"))
+        );
+
+      // Style 2 no arrow
+      document.querySelectorAll(".js-close").forEach((btn) =>
+        btn.addEventListener("click", function () {
+          modal.classList.remove("open");
+        })
+      );
     </script>
   </body>
 </html>
