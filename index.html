@@ -252,6 +252,23 @@
           modal.classList.remove("open");
         })
       );
+
+      // Viết như vậy khi click vào thẻ con sẽ truy ra
+      // Cho tới khi gặp thẻ cha modal lớn thì dừhg
+      // Sk nổi bọt
+      // -> sẽ chặng việc nổi bọt tới modal-container
+      // -> ko truy tiếp lên cha modal nhận click
+      modal.addEventListener("click", function () {
+        modal.classList.remove("open");
+      });
+
+      // Chỉ cho phép nỗi bọt tới container gần nhất và chặn tại đó
+      // TODO tên 1 số class ko chuẩn nhưng tạm pass
+      document
+        .querySelector(".modal__container")
+        .addEventListener("click", function (event) {
+          event.stopPropagation();
+        });
     </script>
   </body>
 </html>
