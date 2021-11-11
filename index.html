@@ -31,6 +31,9 @@
         <ul id="nav">
           <li>
             <a href="#">Home</a>
+            <div class="btn" id="header__mobile-menu">
+              <i class="fa fa-bars"></i>
+            </div>
           </li>
           <li>
             <a href="#band">Band</a>
@@ -41,7 +44,7 @@
           <li>
             <a href="#contact">Contact</a>
           </li>
-          <li>
+          <li class="header__desktop">
             <a href="#">
               More
               <i class="fa fa-caret-down"></i>
@@ -57,6 +60,9 @@
                 <a href="#">Media</a>
               </li>
             </ul>
+          </li>
+          <li class="header__mobile">
+            <a href="#">Merch</a>
           </li>
         </ul>
 
@@ -358,7 +364,7 @@
         2: "/img/la.jpg",
         3: "/img/ny.jpg",
       };
-      var bgImageCount = Object.keys(bgImageUrl).length
+      var bgImageCount = Object.keys(bgImageUrl).length;
       carousel();
 
       function carousel() {
@@ -370,6 +376,10 @@
         }
         setTimeout(carousel, 4000);
       }
+    </script>
+    <script>
+      var mobileMenu = document.getElementById("header__mobile-menu")
+      var header = document.getElementById()
     </script>
   </body>
 </html>

@@ -16,6 +16,10 @@
   width: 100%;
 }
 
+#header__mobile-menu {
+  display: none;
+}
+
 #nav {
   // Fix lại vấn đề css ảnh hưởng vào các con bằng selector >
   // Thẻ a trong sub menu cũng có màu trắng theo
@@ -26,15 +30,19 @@
   // https://css-tricks.com/fighting-the-space-between-inline-block-elements/
   display: flex;
 
-  li {
+  .header__mobile {
+    display: none;
+  }
+
+  > li {
     display: inline-block;
     position: relative;
 
     // Nên để hover vào thẻ li thì khi các submenu hiện
     // Vẫn đang hover vào li cha
     a {
-      // fix vấn đề hover vào li ko đổi màu toàn bộ được
       // Cho a chiếm toàn bộ div li
+      // fix vấn đề hover vào li ko đổi màu toàn bộ được
       display: inline-block;
 
       text-decoration: none;
@@ -47,15 +55,22 @@
       // line-height: $lh-1;
 
       padding: $pd-1 $pd-2;
+
+      &:hover {
+        background-color: $color-grey-1;
+        color: $color-black-1;
+      }
     }
 
-    &:hover a {
-      background-color: $color-grey-1;
-      color: $color-black-1;
-    }
+    &:not(:first-child):hover {
+      > a {
+        background-color: $color-grey-1;
+        color: $color-black-1;
+      }
 
-    &:hover .subnav {
-      display: block;
+      .subnav {
+        display: block;
+      }
     }
   }
 
@@ -68,6 +83,7 @@
     min-width: 160px;
 
     background-color: $color-white-1;
+
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
       0 4px 20px 0 rgba(0, 0, 0, 0.19);
     // set lại để li chiếm trọn 100% do tính chất block
@@ -82,6 +98,7 @@
 
         text-transform: capitalize;
         background-color: $color-white-1;
+        color: $color-black-1;
       }
 
       &:hover a {
@@ -92,6 +109,7 @@
     // độ ưu tiên của 1 class vẫn lớn hơn 2 tag li a nên đè được color trên
   }
 }
+
 .header__search {
   display: inline-block;
 
@@ -103,5 +121,44 @@
 
   &:hover {
     background-color: $color-red-1;
+  }
+}
+
+@include phone {
+  #nav {
+    flex-direction: column;
+    width: 100%;
+
+    .header__mobile {
+      // display: block;
+    }
+    
+    li {
+      &:first-child {
+        display: flex;
+      }
+
+      &:not(:first-child) {
+        // display: none;
+      }
+
+      a {
+        display: block;
+      }
+    }
+
+    .header__desktop {
+      // display: none;
+    }
+  }
+
+  #header__mobile-menu {
+    display: inline-block;
+    margin-left: auto;
+    padding: $pd-1 $pd-2;
+  }
+
+  .header__search {
+    display: none;
   }
 }

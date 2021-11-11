@@ -9,7 +9,13 @@
 44. Tour ticket
 45. Tour places
     -> kỹ thuật margin âm cho card
-47. Buy Ticket Modal
-48. Buy Ticket Modal javascript logic
-49. Row - column layout
-50. Contact-form
+46. Buy Ticket Modal
+47. Buy Ticket Modal javascript logic
+48. Row - column layout
+49. Contact-form
+50. Map footer
+51. Review
+-52
+-53
+54. Tablet responsive
+54. Mobile responsive 

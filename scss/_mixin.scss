@@ -8,3 +8,18 @@
   color: $color;
   background-color: $bgc;
 }
+
+// https://css-tricks.com/approaches-media-queries-sass/
+// f8 responsive
+// PC >= 1024px
+// 1024 > Tablet >= 740
+// 740 > Mobile
+
+$mobile-width: 740px;
+$w3-mobile-width: 601px;
+
+@mixin phone {
+  @media (max-width: #{$w3-mobile-width - 1px}) {
+    @content;
+  }
+}
