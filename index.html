@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Band</title>
-
+    <link
+      rel="shortcut icon"
+      href="https://icons.iconarchive.com/icons/google/noto-emoji-smileys/32/10115-hear-no-evil-monkey-icon.png"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Condensed:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -30,13 +33,13 @@
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">Band</a>
+            <a href="#band">Band</a>
           </li>
           <li>
-            <a href="#">Tour</a>
+            <a href="#tour">Tour</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
           <li>
             <a href="#">
@@ -71,7 +74,7 @@
         </div>
       </div>
 
-      <div class="about">
+      <div id="band" class="about">
         <div class="section__content">
           <h2 class="section__heading">THE BAND</h2>
           <p class="section__heading-sub">We love music</p>
@@ -118,7 +121,7 @@
         </div>
       </div>
 
-      <div class="tour">
+      <div id="tour" class="tour">
         <!-- Section content có margin nên ko đổ màu w100% dc
         Bọc bởi 1 div-container-fluid và đổ
         Ở đây từ đầu bọc vào content khá vớ vẩn
@@ -189,7 +192,7 @@
         </div>
       </div>
       <!-- CONTACT -->
-      <div class="contact">
+      <div id="contact" class="contact">
         <div class="section__content">
           <h2 class="section__heading">CONTACT</h2>
           <p class="section__heading-sub">Fan? Drop a note!</p>
@@ -248,28 +251,18 @@
         <img src="./img/map.jpg" alt="map" />
       </div>
       <!-- FOOTER -->
-      <div id="footer" class="section__content">
-        <div class="socials-list">
-          <a href="#">
-            <i class="fab fa-facebook-square"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-snapchat"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-pinterest-p"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-linkedin"></i>
-          </a>
+      <div id="footer">
+        <div class="section__content">
+          <div class="socials-list">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p class="copyright">Powered by <a href="#">w3.css</a></p>
         </div>
-        <p class="copyright">Powered by <a href="#">w3.css</a></p>
       </div>
     </div>
 

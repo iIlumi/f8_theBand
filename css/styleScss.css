@@ -15,6 +15,10 @@ input {
   color: #000000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul li {
   list-style-type: none;
 }
@@ -360,6 +364,7 @@ ul li {
 
 #footer {
   text-align: center;
+  background-color: #f1f1f1;
   opacity: 0.6;
 }
 
