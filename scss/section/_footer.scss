@@ -1,0 +1,26 @@
+#footer {
+  text-align: center;
+  //   opacity chung hơi lạ -> debug ra ở thẻ cha
+  // Màu thẻ con vẫ nla2 black thuần
+  // 2 lần opacity đè nhau
+
+  opacity: 0.6;
+}
+
+#footer .socials-list {
+  a {
+    text-decoration: none;
+    color: $color-black-1;
+    font-size: $fs-2;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+#footer .copyright {
+  margin: $mg-2;
+  a {
+    color: $color-black-1;
+  }
+}
