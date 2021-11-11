@@ -10,7 +10,8 @@
   //   Dùng padding để set ration cứng cho ảnh
   position: relative;
   padding-top: 50%;
-  background: url("/img/chicago.jpg") top center / cover no-repeat;
+  // Loop carousel background style
+  // background: url("/img/chicago.jpg") top center / cover no-repeat;
 }
 
 // Các phần padding của slider content có thể cộng dồn tính tổng với nhau

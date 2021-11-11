@@ -350,5 +350,26 @@
           event.stopPropagation();
         });
     </script>
+    <script>
+      // Automatic Slideshow - change image every 4 seconds
+      var myIndex = 1;
+      var bgImageUrl = {
+        1: "/img/chicago.jpg",
+        2: "/img/la.jpg",
+        3: "/img/ny.jpg",
+      };
+      var bgImageCount = Object.keys(bgImageUrl).length
+      carousel();
+
+      function carousel() {
+        var x = document.getElementById("slider");
+        x.style.background = `url("${bgImageUrl[myIndex]}") top center / cover no-repeat`;
+        myIndex++;
+        if (myIndex > bgImageCount) {
+          myIndex = 1;
+        }
+        setTimeout(carousel, 4000);
+      }
+    </script>
   </body>
 </html>

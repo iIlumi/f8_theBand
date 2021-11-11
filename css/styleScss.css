@@ -270,7 +270,7 @@ ul li {
 }
 
 #nav {
-  display: inline-block;
+  display: flex;
 }
 
 #nav li {
@@ -339,7 +339,6 @@ ul li {
 #slider {
   position: relative;
   padding-top: 50%;
-  background: url("/img/chicago.jpg") top center/cover no-repeat;
 }
 
 .slider__content {

@@ -22,7 +22,9 @@
   // Tuy nhiên vẫn phãi css riêng lại cho con đè lên
   // -> Quản lí dễ nhưng code lại phức tạp selector hơn
   // Cứ css rồi đè lại sau sẽ đơn giản hơn
-  display: inline-block;
+  // https://www.geeksforgeeks.org/how-to-remove-the-space-between-inline-block-elements/
+  // https://css-tricks.com/fighting-the-space-between-inline-block-elements/
+  display: flex;
 
   li {
     display: inline-block;
