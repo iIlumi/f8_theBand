@@ -16,8 +16,9 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
     <link rel="stylesheet" href="./css/styleScss.css" />
     <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
     <!-- 
@@ -31,6 +32,7 @@
         <ul id="nav">
           <li>
             <a href="#">Home</a>
+            <!-- Có thể dung pos abosolute và tách riêng div này ra -->
             <div class="btn" id="header__mobile-menu">
               <i class="fa fa-bars"></i>
             </div>
@@ -316,70 +318,6 @@
       </div>
     </div>
 
-    <script>
-      // Temp stop w3
-      Array.from(document.getElementsByClassName("mySlides")).forEach((ele) => {
-        ele.classList.toggle("mySlides");
-      });
-    </script>
-    <script>
-      // https://flaviocopes.com/how-to-add-event-listener-multiple-elements-javascript/
-      let modal = document.querySelector(".modal");
-
-      document
-        .querySelectorAll(".card-buy-btn")
-        .forEach((btn) =>
-          btn.addEventListener("click", (event) => modal.classList.add("open"))
-        );
-
-      // Style 2 no arrow
-      document.querySelectorAll(".js-close").forEach((btn) =>
-        btn.addEventListener("click", function () {
-          modal.classList.remove("open");
-        })
-      );
-
-      // Viết như vậy khi click vào thẻ con sẽ truy ra
-      // Cho tới khi gặp thẻ cha modal lớn thì dừhg
-      // Sk nổi bọt
-      // -> sẽ chặng việc nổi bọt tới modal-container
-      // -> ko truy tiếp lên cha modal nhận click
-      modal.addEventListener("click", function () {
-        modal.classList.remove("open");
-      });
-
-      // Chỉ cho phép nỗi bọt tới container gần nhất và chặn tại đó
-      // TODO tên 1 số class ko chuẩn nhưng tạm pass
-      document
-        .querySelector(".modal__container")
-        .addEventListener("click", function (event) {
-          event.stopPropagation();
-        });
-    </script>
-    <script>
-      // Automatic Slideshow - change image every 4 seconds
-      var myIndex = 1;
-      var bgImageUrl = {
-        1: "/img/chicago.jpg",
-        2: "/img/la.jpg",
-        3: "/img/ny.jpg",
-      };
-      var bgImageCount = Object.keys(bgImageUrl).length;
-      carousel();
-
-      function carousel() {
-        var x = document.getElementById("slider");
-        x.style.background = `url("${bgImageUrl[myIndex]}") top center / cover no-repeat`;
-        myIndex++;
-        if (myIndex > bgImageCount) {
-          myIndex = 1;
-        }
-        setTimeout(carousel, 4000);
-      }
-    </script>
-    <script>
-      var mobileMenu = document.getElementById("header__mobile-menu")
-      var header = document.getElementById()
-    </script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

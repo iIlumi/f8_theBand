@@ -15,6 +15,15 @@ input {
   color: #000000;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -32,7 +41,7 @@ ul li {
 .section__heading, .section__heading--white {
   text-align: center;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 4px;
   margin: 10px 0;
 }
@@ -267,6 +276,7 @@ ul li {
   top: 0;
   z-index: 1;
   width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 #header__mobile-menu {
@@ -316,6 +326,7 @@ ul li {
   min-width: 160px;
   background-color: #ffffff;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
 }
 
 #nav .subnav li {
@@ -347,15 +358,33 @@ ul li {
 }
 
 @media (max-width: 600px) {
+  #header {
+    box-shadow: none;
+  }
   #nav {
     flex-direction: column;
     width: 100%;
   }
-  #nav li:first-child {
+  #nav .header__mobile {
+    display: block;
+  }
+  #nav > li:first-child {
     display: flex;
   }
-  #nav li a {
+  #nav > li:not(:first-child) {
+    display: none;
+  }
+  #nav > li a {
     display: block;
+  }
+  #nav.open > li:not(:first-child) {
+    display: block;
+  }
+  #nav:not(.open) > li:first-child {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #nav .subnav {
+    position: initial;
   }
   #header__mobile-menu {
     display: inline-block;
