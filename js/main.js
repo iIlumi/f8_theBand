@@ -43,9 +43,9 @@ document
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 1;
 var bgImageUrl = {
-  1: "/img/chicago.jpg",
-  2: "/img/la.jpg",
-  3: "/img/ny.jpg",
+  1: "./img/chicago.jpg",
+  2: "./img/la.jpg",
+  3: "./img/ny.jpg",
 };
 var bgImageCount = Object.keys(bgImageUrl).length;
 carousel();

@@ -26,7 +26,7 @@
     // Ngoài ra có thêm txt-center nhưng ko thấy lệch
 
     margin-left: $mg-2 + 1;
-    padding:  0 $pd-4;
+    padding: 0 $pd-4;
 
     background-color: $color-red-1;
     color: $color-white-1;
@@ -62,4 +62,14 @@
   // padding-bottom: $pd-7;
   // NOTE TH này có thể gom chung được ?
   margin: $pd-5 (-$pd-4) $pd-7;
+}
+
+@include phone {
+  .tour__list {
+    flex-direction: column;
+    
+    .tour__card {
+      margin-bottom: $mg-4;
+    }
+  }
 }

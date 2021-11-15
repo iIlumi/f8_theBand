@@ -5,13 +5,19 @@
   // 2 lần opacity đè nhau
   background-color: $color-white-2;
   opacity: 0.6;
+
+  // Cheat để khớp layout mẫu
+  // layout mẫu có padding 0.01em nhưng bỏ qua, lệch nhẹ
+  font-size: $fs-2;
 }
 
 #footer .socials-list {
+  // line-height: $lh-2 + 4;
+
   a {
     text-decoration: none;
     color: $color-black-1;
-    font-size: $fs-2;
+
     &:hover {
       opacity: 0.6;
     }
@@ -20,6 +26,8 @@
 
 #footer .copyright {
   margin: $mg-2;
+  font-size: $fs-1;
+
   a {
     color: $color-black-1;
   }
